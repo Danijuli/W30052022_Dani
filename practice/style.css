@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e90ff; /* blue color */
+  /* background-color: #FFFF00; /* yellow color */
+}
+
+header,
+footer {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #333;
+  text-shadow: 2px 2px #fff;
+}
+
+nav {
+  background-color: rgba(51, 51, 51, 0.9);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #1a4d80;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  padding: 1em;
+  width: 80%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+  font-size: 1.5em;
+  color: #333;
+  text-shadow: 2px 2px #fff;
+}
+
+section p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: #333;
+}
+
+section ul {
+  list-style: none;
+  font-size: 1.2em;
+  padding: 0;
+  text-align: left;
+}
+
+section li {
+  margin: 0.5em 0;
+}
+
+section button {
+  padding: 0.5em 1em;
+  background-color: #3366ff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+section button:hover {
+  background-color: #1a4d80;
+}
+
+section img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 2em 0;
+}
+
+/* Add images of people studying online */
