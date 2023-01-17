@@ -148,3 +148,34 @@ const reduceFunc = function (acc, country, i) {
 const countriesSentence = countries.reduce(reduceFunc, "");
 
 console.log(countriesSentence);
+
+const higherOrder = function (n) {
+  console.log(`I am a higherOrder function`, n);
+  const doSomething = function (m) {
+    console.log(`I am in a doSomething function`, m);
+    const doWhatEver = function (t) {
+      console.log(`I am in a doWhatEver function`, t);
+      return 2 * n + 3 * m + t;
+    };
+    return doWhatEver;
+  };
+  return doSomething;
+};
+
+const c = higherOrder(2)(3)(10);
+console.log(c);
+
+// How to sum element from Array
+
+const nums = [1, 2, 3, 4, 5];
+const sumNums = function (param) {
+  let sum = 0;
+  const helpSumNums = function (element) {
+    sum += element;
+  };
+
+  param.forEach(helpSumNums);
+  return sum;
+};
+
+console.log(sumNums(nums));
